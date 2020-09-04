@@ -25,13 +25,19 @@ public class SpeedEnchantment extends Enchantment{
 
     @Override
     public int getMaxLevel() {
-        return 2;
+        return 1;
     }
 
     @Override
     public int getMinLevel() {
-        return 1;
+        return 0;
     }
+
+    @Override
+    public boolean isAllowedOnBooks() {
+        return true;
+    }
+
     @Mod.EventBusSubscriber(modid = AdventureCraft.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class SpeedEquip {
 
