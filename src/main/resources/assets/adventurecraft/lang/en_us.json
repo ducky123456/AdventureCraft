@@ -1,3 +1,10 @@
 {
-  "enchantment.adventurecraft.speed": "Speed"
+	"item.adventurecraft.oak_wood_bark": "Oak Wood Bark",
+	"item.adventurecraft.dark_oak_wood_bark": "Dark Oak Wood Bark",
+	"item.adventurecraft.spruce_wood_bark": "Spruce Wood Bark",
+	"item.adventurecraft.birch_wood_bark": "Birch Wood Bark",
+	"item.adventurecraft.acacia_wood_bark": "Acacia Wood Bark",
+	"item.adventurecraft.jungle_wood_bark": "Jungle Wood Bark",
+	"enchantment.adventurecraft.speed": "Speed",
+	"itemGroup.adventurecrafttab": "Adventure Craft Tab"
 }

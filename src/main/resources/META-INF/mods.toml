@@ -8,9 +8,9 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 modId="adventurecraft" #mandatory
 
-version="1.0.0" #mandatory
+version="1.0" #mandatory
 
-displayName="Adventure Mod" #mandatory
+displayName="AdventureCraft" #mandatory
 
 updateJSONURL="http://myurl.me/" #optional
 
