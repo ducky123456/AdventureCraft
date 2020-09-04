@@ -18,12 +18,12 @@ displayURL="http://example.com/" #optional
 
 logoFile="examplemod.png" #optional
 
-credits="crayon_duck" #optional
+credits="crayon_duck,putopug" #optional
 
-authors="crayon_duck" #optional
+authors="crayon_duck,putopug" #optional
 
 description='''
-	This is AdventureCraft!! This will enchance the survival experience.
+	This is AdventureCraft!! This mod will enchance the minecraft survival experience.
 '''
 
 [[dependencies.adventurecraft]] #optional
