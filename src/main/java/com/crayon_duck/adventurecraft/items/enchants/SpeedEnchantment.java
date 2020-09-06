@@ -1,4 +1,4 @@
-package com.crayon_duck.adventurecraft.items;
+package com.crayon_duck.adventurecraft.items.enchants;
 
 import com.crayon_duck.adventurecraft.AdventureCraft;
 import com.crayon_duck.adventurecraft.init.EnchantHandler;
@@ -42,12 +42,14 @@ public class SpeedEnchantment extends Enchantment{
     @Mod.EventBusSubscriber(modid = AdventureCraft.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class SpeedEquip {
     	@SubscribeEvent
-    	public static void doStuff(TickEvent.PlayerTickEvent event) {
+        public static void doStuff(TickEvent.PlayerTickEvent event) {
             PlayerEntity playerIn = event.player;
-            int level = EnchantmentHelper.getEnchantmentLevel(EnchantHandler.SPEED.get(), playerIn.getItemStackFromSlot(EquipmentSlotType.FEET));
-            if(level == 1) {
-                playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 10, 3));
+            if (EnchantmentHelper.getEnchantmentLevel(EnchantHandler.SPEED.get(), playerIn.getItemStackFromSlot(EquipmentSlotType.FEET)) == 1) {
+                playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 10, 4,true,false));
             }
+        }
+
+
+
     	}
     }
-}
