@@ -1,5 +1,6 @@
 package com.crayon_duck.adventurecraft;
 
+import com.crayon_duck.adventurecraft.init.EnchantHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,6 +30,7 @@ public class AdventureCraft
         modEventBus.addListener(this::setup);
         
         ItemInit.ITEMS.register(modEventBus);
+        EnchantHandler.ENCHANTMENTS.register(modEventBus);
         
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
